@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Dimitrie">
+	<meta name="description" content="ContactLTS">
+	<title>TacoShopContact</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	
+</head>
+<body>
+	<header class="header">
+		<h1 class="header__h1">Contact Us</h1>
+	
+	<nav class="header__nav">
+		<ul class="header__ul">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			
+			<li>
+				<a href="/#menu">Our menu</a>
+			</li>
+			<li>
+				<a href="hours.html">Store hours</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			
+		</ul>
+	</nav>
+	<br>
+	</header>	
+	<section class="hero">
+		<figure>
+			<img src="img/barbecue_1000x649.png" alt="tacos,closeup" width="1000" height="649">
+			<igcaption class="offscreen">Little taco shop tacos</figcaption>
+		</figure>
+	</section>
+	<main class="main">
+		<article class="main__article">
+		<h2>Our adress</h2>
+		<address>Partizanska 12, Lonica<br>
+		<br><br>
+		phone:<a href="tel:+5555555555">55555-55555</a>
+		</address>
+	</article>
+		<article class="main__article contact">
+		<h2 class="contact__h2">Our Contact form</h2>
+		<form action="https://httpbin.org/get" method="get" class="contact__form">
+			<fieldset class="contact__fieldset">
+				<legend class="offscreen">Send us a message</legend>
+				<p class="contact__p">
+					<label for="name" class="contact__label">Name</label>
+					<input type="text" name="name" id="name"  class="contact__input" placeholder="your name" required>
+
+				</p>
+				<p>
+					<label for="email" class="contact__label">Email</label>
+					<input type="email" name="email" id="email" class="contact__input" placeholder="your email" required>	
+				</p>
+				<p class="contact__p">
+					<label for="message" class="contact__label">your message</label>
+					<br>
+					<textarea name="message" id="message" class="contact__textarea" cols="30" rows="10" placeholder="type your message here"></textarea>
+				</p>
+			</fieldset>
+			<button type="submit" class="contact__button">Send</button>
+			<button type="reset" class="contact__button">Reset</button>
+		</form>
+	</article>
+	
+	
+		
+		
+	</form>
+	</main>
+	
+   <footer class="footer">
+   	<p><span class="nowrap">Copyright &copy;</span> <span class="nowrap">Little taco shop</span></p>
+   </footer>
+</body>
+</html>

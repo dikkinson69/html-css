@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+
+body {
+	font-family: "Roboto",  sans-serif;
+	font-size: 1.5rem;
+	min-height: 200vh;
+}
+
+.outer-container {
+	border: 3px dashed #000;
+	width: 75vw;
+	height: 85vh;
+	margin: 40px auto;
+	position: relative;
+}
+/*relative pozicija je relativna od svojeg osnovnog mesta
+s tim da ce da se pomeri ako mu damo properties
+za levo ili desno*/
+.inner-container {
+	border: 2px solid #00f;
+	width: 40vw;
+	height: 50vh;
+	margin: 200px auto;
+}
+
+.box {
+	width: 150px;
+	height: 150px;
+	color:#fff;
+	padding: 1rem;
+}
+/*Pozicija koja se odnosi prema najblizem pretku
+u ovom slucaju outer container ima poziciju relative
+i u njega ce uci ovaj absolut*/
+.absolute { 
+	background-color: #00f;
+	position: absolute;
+	top: 0;
+/*	left:- 10000px; OVO JE DA NESTANE. ABSOLUT JE IDEALAN ZA TO
+*/	left: 0;
+	z-index: 1;
+}
+
+/*uvek ce biti relativan svom roditelju kontenjeru
+*/
+.relative {
+	background-color: #f00;
+	position: relative;
+	top: 300px;
+	left: 100px;
+}
+/*uvek je fiksirana pozicija na ekranu,
+cak i kada skrolujem!!! uvek bleji tu*/
+.fixed {
+	background-color: green;
+	position: fixed;
+	top: 100px;
+}
+
+/*zakacice se za kontenjer koji prodje kroz nj
+u ovom slucaju ovaj fixed*/
+.sticky {
+	background-color: #000;
+	position: sticky;
+	top: 0;
+}
+
+
+section {
+	height: 100vh;
+}
+
+.blue {
+	background-color: #00f;
+}
+
+.red {
+	background-color: #f00;
+}
+
+.green {
+	background-color: green;
+}
+
+header, footer {
+	color: white;
+	text-align: center;
+	height: 100px;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	font-size: 5rem;
+
+}
+
+footer {
+	background-color: black;
+	position: sticky;
+	bottom: 0;
+	font-size: 3rem;
+}
+
+
+a:visited {
+	color: #fff;
+}
+
+.social {
+	background-color: royalblue;
+	color: #fff;
+	font-size: inherit;
+	padding: 1rem;
+	position: fixed;
+	top: 30%;
+	left: 0;
+/*	z index je da element ide preko drugog elementa. Da bude jaci
+*/	z-index: 1;
+}
+
+

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=	, initial-scale=1.0">
+	<meta name="author" content="Dimitrije">
+	<meta name="description" content="This page contains learning things">
+	<title>Document</title>
+	<link rel="icon" href="logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	
+</head>
+<body>
+	<header>
+	<h1>My goals for the year</h1>
+
+	<nav aria-label="primary-navigation">
+		
+		<ul>
+			<li>
+				<a href="#html">learning html</a>
+
+			</li>
+			<li>
+				<a href="#vacation">planning a vacation</a>
+			</li>
+			<li>
+				<a href="#contact">Contact</a>
+			</li>	
+
+		</ul>		
+	</nav>
+</header>
+	<hr>
+	<main>
+	<h2>ready to learn html</h2>
+	<p>This is my iaiuuhisas</p>
+
+			<img id="slika" src="img/html.png" alt="HTML5Logo">
+	
+	<h3>h3 malo manji<abbr title="titl neki">&nbsp;titl</abbr></h3>
+	<p>This is my sada sd</p>
+
+<hr>
+<article id="html">
+	<h2>&nbsp;ready to learn html</h2>
+	<p>This is my <br>... i learn more about web dev. <br>i plan out my <br> i use resources <br></p>
+	<h3>oprobam da ne sebem nesto <em>glupo</em> </h3>
+	<p>nesto<strong>glupo</strong></p>
+	<hr>
+
+<article id="vacation">
+	
+	<p>Iv heard good things about here</p>
+<figure>
+	<img src="img/srb.jpg" alt="srbija" width="280" height="200" loading="lazy">
+	<figcaption>
+		srbija slikas
+	</figcaption>
+</figure>
+</article>
+<article id="contac">
+	<address>Loznica</address>
+	
+	
+</article>
+</hr>
+	<section>
+	<ol>
+		<li>prva</li>
+		<li>druga</li>
+		<li>treca</li>
+	</ol>
+	<hr>
+<article id="sekcija">
+<h3>places to avoid</h3>
+	<dl>
+		<dt>kina</dt>
+		<dd>njesra</dd>
+		<dt>s.koreja</dt>
+		<dd>kurac</dd>
+	</dl>
+<aside>
+	<details>
+		<summary>guess the number of <mark> hours </mark> i code</summary>
+		<p>i start at <time datetime="8:00">8am </time> and i code for 3 hours</p>
+	</details>
+</aside>
+<br>
+
+<table>
+
+<caption>TABLA</caption>
+
+	<thead>
+		
+		<tr>
+			<th>day</th>
+			<th colspan="">time</th>
+			<th>activity</th>
+		</tr>
+	</thead>
+    <tbody>
+		<tr>
+		<th>morning</th>
+		  <td>
+			<time datetime="11:00">11am</time>-<time datetime="12:00">12pm
+		   </td>
+			<td>write code</td>
+		</tr>
+		<tr>
+		     <th>noon</th>
+		     <td>
+			 <time datetime="12:00">12pm</time>-<time datetime="13:00">13pm
+		     </td>
+		     <td>write code</td>
+		</tr>
+
+		<tr>
+			 <th>evening</th>
+			 <td>
+			 <time datetime="08:00">8am</time>-<time datetime="11:00">11am
+			 </td>
+			 <td>write code</td>
+		</tr>
+</tbody>
+<tfoot>
+<tr>
+	<td colspan="2">free time </td>
+</tr>
+</tfoot>
+</table>
+
+</section>
+
+</article>
+</hr>
+
+<a href="about.html">about</a>	
+<p>
+	<a href="#">back to top</a>
+</p>
+
+<hr>
+<article id="contact"><
+	<h1>Contact me </h1>
+
+	<form action="https://httpbin.org/get" method="get">
+		<fieldset>
+		<legend>Personal info</legend>
+		<p>
+		<label for="firstname">first name:</label>
+		<input type="text" name="firstname" id="firstname" placeholder="name" autofocus>
+	</p>
+	<p>
+	<label for="firstname">last name:</label>
+		<input type="text" name="firstname" id="firstname" placeholder="name">
+	</p>
+	<p>
+	<label for="password">password:</label>
+		<input type="password" name="password" id="password" placeholder="name">
+	</p>
+	<p>
+	<label for="phone">phone:</label>
+		<input type="tel" name="phone" id="phone" placeholder="5555555555"
+		pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required="">
+	</p>
+
+<p>
+	<label for="decade">favourite decade:</label>
+		<input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+</p>
+<p>
+	<label for="coffee">Favourite Coffee</label>
+		<select name="coffee" id="coffee">
+		<optgroup label="cofees">
+			<option value="iced coffee">Iced coffee</option>
+			<option value="regular">regular</option>
+			</optgroup>
+			<optgroup label="other">
+			<option value="turkish" selected>turkish</option>
+			<option value="other">other</option>
+		</optgroup>
+		</select>
+	</p>
+	<!-- <p>
+		<label for="coffee">Favourite coffee</label>
+		<input type="text" name="coffee" id="coffee" list="coffee-list">
+		<datalist id="coffee-list">
+			<option value="coffee">
+			<option value="americano">
+			<option value="espresso">
+			<option value="turkish">
+			<option value="latte">
+		</datalist>
+	</p> -->
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend>Favourite food</legend>
+		<p>
+			<input type="radio" name="food" id="tacos" value="tacos">
+			<label for="tacos">tacos</label>
+		</p>
+		<p>
+			<input type="radio" name="food" id="pizza" value="pizza">
+			<label for="pizza">pizza</label>
+		</p>
+		<p>
+			<input type="radio" name="food" id="burger" value="burger">
+			<label for="burger">burger</label>
+		</p>
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend>pets</legend>
+		<p>
+			<input type="checkbox" name="pets" id="dogs" value="dogs">
+			<label for="dog">dog</label>
+		</p>
+		<p>
+			<input type="checkbox" name="pets" id="cats" value="cats">
+			<label for="cats">cats</label>
+		</p>
+		<p>
+			<input type="checkbox" name="pets" id="fish" value="fish">
+			<label for="fish">dog</label>
+		</p>
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend>Send me a note</legend>
+		<label for="message">your message</label>
+		<br>
+		<textarea name="message" id="message" cols="30" rows="10" placeholder="type your message"></textarea>
+	</fieldset>
+	<br>
+	<button type="submit">Submit</button>
+	<button type="submit" formaction="https://httpbin.org/post" formmethod="post">post</button>
+	<button type="reset">reset</button>
+	</form>
+
+
+</article>
+
+
+
+<footer>
+<hr>
+	<ul>
+		<li> <a href="logo.png" download="logo.png">download picture</a>
+		</li>
+	</ul>
+		<li>
+			Dial <a href="tel:+1234567890">phone</a>s
+		</li>
+
+
+		<li>
+			open <a href="https://www.google.com/" target="blank">google </a>
+		</li>
+
+
+</footer>
+
+</hr>
+
+</main>
+
+</body>
+</html>

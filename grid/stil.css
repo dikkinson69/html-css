@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+
+body {
+	font-family: "Roboto",  sans-serif;
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-auto-rows: 50px auto 50px;
+	grid-template-areas: "hd hd hd hd hd hd hd hd hd"
+						 "mn mn mn mn mn mn mn mn mn"
+						 "ft ft ft ft ft ft ft ft ft";
+	column-gap: 0.5rem;					 
+}
+
+.el {
+	background-color: rebeccapurple;
+	color: #fff;
+	display: grid;
+	place-content: center;
+}
+
+.header {
+	grid-area: hd;
+}
+.sidebar {
+	grid-area: sb;
+	background-color: 00f;
+}
+
+.footer {
+	grid-area: ft;
+}
+
+
+.container { 
+grid-area: mn;
+min-height: 400px;
+display: grid;
+/*grid-template-columns: 2fr 1fr 1fr;
+*//*fr se koristi u gridu, mnogo bolje od px
+*/
+grid-template-columns: repeat(2, 1fr 2fr);
+/*repeat mu radi da imaju 2 kolone sirine 1fr 2fr...
+*/
+/*grid-auto-rows: 200px;
+*//*svaki row je 200px
+*/
+grid-auto-rows: minmax(150px, auto);
+gap: 1rem;
+/*sam gap difajnuje i row i column (prvo row). a moze i posebno column-gap: ili row-gap
+*/}
+
+.box {
+	background-color: #000;
+	color: #fff;
+	font-size: 2rem;
+	padding: 0.5rem;
+}
+
+.box:first-child {
+	background-color: #00f;
+	/*grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 3;*/
+	grid-column: 1 / 4;
+	grid-row: 1 / 3;
+
+	display: grid;
+	align-content: center;
+	justify-content: center;
+/*
+	place-content:  center;
+	skracenica za ovo gore. da 1 bude u sred*/
+
+/*	ovo je precica za sve ono iznad.
+column pocinje na 1 linije i goto je na 4
+row na 1 i gotov je na 3	*/
+}
+
+.box:nth-child(2) {
+	background-color: purple;
+	grid-column: 1 / 5;
+	grid-row: 3 / 4;
+	}
+
+
+
+
+
+

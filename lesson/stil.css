@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/*reset*/
+* {
+	margin: 0;
+	 padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 1.5rem;
+	font-family: 'Nunito', sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+main {
+	flex-grow: 1;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	display: grid;
+	place-content: center;
+}
+
+div:first-child {
+	background-color: dodgerblue;
+
+/*	transform translatex znaci da se pomera desno
+ako je broj u plusu, kao ovde ispod 50%. Da je -50%,
+otisao bi levo
+*/	
+	/*transform: translateX(-50%);*/
+
+	/*rotatex rotira od vrha*/
+	/*transform: rotateX(180deg);*/
+/*	scale ga siri i suzava. x ga siri levo i desno, y gore dole
+*/	
+	/*transform: scaleX(120%);*/
+
+
+/*skew tiltuje strane*/
+	/*transform: skewX(-10deg);*/
+
+}
+
+div:nth-child(2) {
+	background-color: yellow;
+/*
+translatey znaci da ide gore i dole, ista prica ya + i -*/
+	/*transform: translate Y(-2rem);*/
+
+	/*rotatey ga rotira levo desno*/
+	/*transform: rotateY(180deg);*/
+
+	/*transform: scaleY(120%);*/
+
+	/*transform: skewY(10deg);*/
+}
+
+div:last-child {
+	background-color: limegreen;
+/*sa samo translate u isto vreme radi i x i y.
+prvi je x, znaci levo desno. drugi je y, znaci gore dole*/
+	/*transform: translate(100%, -5rem);*/
+
+	/*rotatez ga rotira clockwise*/
+/*	transform: rotate(78deg);*/
+	/*transform: scale(50%, 50%);
+*/
+
+/*transform: skew(-10deg, -10deg);*/
+}
+
+div:hover {
+	/*transition ga odradi da se prebaci u ovom slucaju
+	kad hoverujem u plavu boju za 10 sec*/
+
+
+	background-color: midnightblue;
+	/*transition-property: background-color, transform;
+	transition-duration: 2s, 3s;
+	transition-delay: 0.5s;
+	transition-timing-function: linear;*/
+	transition: all 2s ease 0.5s;
+}
+
+div:last-child:hover {
+	transform: rotate(180deg);
+}
+
+
+/*ovo dole ce da rotira poslednji kvadrat i pomera ga levo desno po stranici*/
+.animate {
+	/*animation-name: slide;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1s;
+	animation-iteration-count: 5s;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+*/
+	/*kraca verzija ovog gore*/
+	animation: 5s ease-in-out 1s 2 normal forwards slide;	
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+	}
+	33% {
+		transform: translateX(600px) rotate(180deg);
+	}
+	66% {
+		transform: translateX(-600px) rotate(-180deg);
+	}
+	100% {
+		transform: translateX(0);
+		background-color: rebeccapurple;
+	}
+}

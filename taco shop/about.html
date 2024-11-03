@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Dimitrie">
+	<meta name="description" content="About the little taco shop">
+	<title>About</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+ // Select all headers within the #view2 section
+    const headers = document.querySelectorAll("#view2 header");
+
+    // Loop through each header and add click event listener
+    headers.forEach(header => {
+        const headerText = header.querySelector(".header__h1");
+
+        headerText.addEventListener("click", (event) => {
+            const myText = event.target.textContent;
+            event.target.textContent = myText === "Dikijevi Cevapi" ? "MMM CEVAP" : "Dikijevi Cevapi";
+            event.target.style.color = myText === "Dikijevi Cevapi" ? "red" : "";
+        });
+    });
+</script>
+</head>
+<body>
+	<section id="view2">
+	<header class="header">
+	<h1 class="header__h1">Dikijevi cevapi</h1>
+		
+	<nav class="header__nav">
+		<ul class="header__ul">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="#menu">Menu</a>
+			</li>
+			<li>
+				<a href="hours.html">Hours</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+
+		</ul>
+	</nav>
+	<br>
+	</header>
+	<section class="hero">
+		<h2 class="hero__h2">Welcome!</h2>
+		<figure>
+		<img src="img/pomfrit_1000x667.png" alt="tacos,tray" width="1000" height="667">
+		<figcaption class="offscreen">Tray of tacos</figcaption>
+		</figure>
+	</section>
+	<main class="main">
+		<article id="about" class="main__article about">
+		<h1>About LTS</h1>
+		<p>LTS was founded in 2002. Our shop was built for the love of tacos. We hope our shop offers a unique taste to our towns</p>
+		<aside class="about__trivia">
+				<h3>Taco trivia</h3>
+		</aside>
+		<details>
+			<summary>When did tacos appear in Serbia</summary>
+			<p class="about__trivia-answer">The tacos appearead in Serbia in 1912
+				(Source: <cite>
+					<a href="https://en.wikipedia.org/wiki/Battle_of_Kumanovo">Wiki</a>
+				</cite>)
+			</p>
+		</details>
+	</article>
+	</main>
+<footer class="footer">
+   	<p><span class="nowrap">Copyright &copy;</span> <span class="nowrap">Little taco shop</span></p>
+</footer>
+</section>
+</body>
+</html>
